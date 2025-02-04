@@ -5,6 +5,7 @@ const configureCors = () => {
     // origin -> this will tell that which origins you want user can access your api
     "origin": (origin, callback) => {
       const whitelist = [
+        "http://localhost:5173",
         "http://localhost:3000",
       ];
       if (whitelist.indexOf(origin) !== -1 || !origin) {
